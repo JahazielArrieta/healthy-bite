@@ -1,13 +1,15 @@
-var express = require('express')
-var app = express()
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/main'))
+  .get('/about-us', (req, res) => res.render('pages/about-us'))
+  .get('/menu', (req, res) => res.render('pages/menu'))
+  .get('/contact-us', (req, res) => res.render('pages/contact-us'))
 
-app.get('/', function(request, response) {
-  response.send('Hello World!')
-})
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})

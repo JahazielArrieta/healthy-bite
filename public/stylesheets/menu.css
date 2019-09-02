@@ -1,0 +1,76 @@
+.body{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  html, body {
+  
+  }
+  
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  
+    .jumbotron {
+      margin-bottom:0;
+      background-color:#8cfffb;
+    }
+    .main-logo {
+      height: 10em;
+    }
+  
+  #bg-image{
+    background-image: url("../menuImg.jpg");
+  border: none;
+  position: absolute;
+  width: 
+    height: 100%;
+  }
+  .bg-color {
+    background-color: #f36087;
+
+  }
+  
+  .horariosImg{
+    height: 200px;
+  }
+  
+  menuImg{
+  
+  
+  }
+
+  #menu-title{
+    color: white;
+    font-size: 3em;
+    border: 1px black;
+
+  }
+.navbar{
+  
+}
+.navbar-brand {
+  height: 8em;
+}
+.bg-color {
+  background-color: #8cfffb;
+}
+.navbar-nav{
+display: flex;
+}
+li.nav-item{
+  align-items: flex-end;
+}
+#menu-selector{
+  font-family: 'Montserrat', sans-serif;
+  color: #f36087;
+  font-size: xx-large;
+  font-weight: 700;
+  padding: .5em;
+}
+.separator{
+  height: 5px;
+  background-color: #f36087;
+}
+

@@ -1,0 +1,26 @@
+.navbar{
+  
+}
+.navbar-brand {
+  height: 15em;
+}
+.bg-color {
+  background-color: #8cfffb;
+}
+.navbar-nav{
+display: flex;
+}
+li.nav-item{
+  align-items: flex-end;
+}
+#menu-selector{
+  font-family: 'Montserrat', sans-serif;
+  color: #f36087;
+  font-size: xx-large;
+  font-weight: 700;
+  padding: .5em;
+}
+.separator{
+  height: 5px;
+  background-color: #f36087;
+}
