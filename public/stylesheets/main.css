@@ -7,10 +7,69 @@ padding: 0;
 border: none;
 position: relative;
 }
+
+#main-logo{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  
+}
+ #contacto{
+   margin-bottom: 100px;
+ }
+.logo{
+  position:absolute; 
+  top: 20%; 
+  left: 35%; 
+  visibility:visible;
+  display: flex;
+}
 .main-container{
   display: flex;
-flex-flow: row wrap;
-margin: 20% 10%;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.container{
+  width: 100%;
+}
+
+#galeria{
+  height: 100%;
+  
+}
+.background-quote{
+
+  background-color: #8cfffb;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#us{
+  display: block;
+  position: relative;
+  width: 100%;
+  
+  
+}
+.text-container{
+  display: block;
+  position: absolute;
+  width: 50%;
+  background-color: rgb(255, 124, 47);
+
+  border-radius: 3%;
+  height: 100px;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center; 
+  font-weight: 500;
+  margin: 10% 25%;
+  font-weight: bold;
+  padding: 20px; 
+}
+.text-container a{
+
+  color: #f5d5c6;
 }
 
 html, body {
@@ -26,7 +85,7 @@ height: 100%;
   width: 20%;
 }
 .box-menu{
-  width: 70%
+  width: 70%;
 }
 .fakeimg {
     height: 200px;
@@ -41,23 +100,38 @@ height: 100%;
   .horariosImg{
     height: 100%;
     width: 100%;  
-    margin: 0 1px;;
+    margin: 0 1px;
+    position: relative;
+    padding-top:100px;
   }
 
+  .menuImg{
+    height: 100%;
+    width: 100%;  
+    margin: 0 1px;
+    position: relative;
+    padding-top:100px;
+  }
 .navbar{
-  
+  position: fixed;
+  width: 100%;
+  z-index:1;
+ 
 }
 .navbar-brand {
-  height: 15em;
+  height: 12em;
 }
 .bg-color {
   background-color: #8cfffb;
 }
 .navbar-nav{
-display: flex;
+  display: flex;  
+  justify-content: space-around;
+  float: right;
 }
 li.nav-item{
-  align-items: flex-end;
+  margin: 1px;
+  float: right;
 }
 #menu-selector{
   font-family: 'Montserrat', sans-serif;
@@ -129,3 +203,39 @@ a.social-icons{
   background: rgb(255, 155, 222);
   color: white;
 }
+
+
+
+
+
+blockquote {
+  
+  }
+  blockquote:before { 
+  content: "\201C"; /* inicio comilla */
+  font-family: Georgia;
+  font-size:40px; /* tamaño */
+  font-weight: bold; line-height:0px;
+  color:#170936; /* Color  */
+  vertical-align:middle;
+  }
+  blockquote:after { /* final */
+  content: "\201D";
+  font-family: Georgia;
+  font-size:40px; /* tamaño */
+  font-weight: bold;
+  line-height:0px;
+  color:#170936; /* Color  */
+  vertical-align:middle;
+  padding-top:10px;
+  flex-wrap: nowrap;
+  }
+
+  #menu{
+    height: 100%;
+  }
+
+  .carousel-item{
+    height: 800px;
+    width: 100%;
+  }

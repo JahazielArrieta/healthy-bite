@@ -1,60 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <% include ../partials/header.ejs %>
-        <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
-    </head>
+</div>
+<!----Inicia menu-->
+                      <img src="../menuImg.jpg" class="menuImg" id= "menu">
 
-    <body>
-        
-      <% include ../partials/nav.ejs %>  
-
-              <div class="box-hour" id= "horario">
-                  <h2 class="titles">Delicioso y Saludable</h2>
-                  <img src="../horarios.jpg" class="horariosImg">
-              
-              
-              
-            </div>
-            <div class="main-container" id= "contacto">
-                <div class="box-menu">
-                    <h2>Visitanos</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7004.002540443457!2d-106.1048414772187!3d28.629724029675316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea432d4f4ad32b%3A0x9ec67fea71119506!2sQuintas%20del%20Sol%2C%20Campestre-Lomas%2C%2031214%20Chihuahua%2C%20Chih.!5e0!3m2!1ses!2smx!4v1567449675370!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    <p>O haz tu pedido al 614 123 4567</p>
-                  </div>
-                  <div class="box-social">
-                      <h3>Siguenos en nuestras redes sociales.</h3>
-                              <a class="btn btn-block btn-social btn-twitter">
-                                <span class="fa fa-twitter"></span> Sign in with Twitter
-                              </a>
-                              <a class="btn btn-block btn-social btn-facebook">
-                                <span class="fa fa-facebook"></span> Sign in with Faceboot
-                              </a>
-                              <a class="btn btn-block btn-social btn-google">
-                                <span class="fa fa-google"></span> Sign in with Google
-                              </a>
+                      
+                          <!--Inicia encuentranos-->
+                  <div class="main-container" id= "contacto">
+                      <div class="box-menu">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7004.002540443457!2d-106.1048414772187!3d28.629724029675316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea432d4f4ad32b%3A0x9ec67fea71119506!2sQuintas%20del%20Sol%2C%20Campestre-Lomas%2C%2031214%20Chihuahua%2C%20Chih.!5e0!3m2!1ses!2smx!4v1567449675370!5m2!1ses!2smx" width=" 1000" height="800" frameborder="0" style="border:0;" allowfullscreen="" >
+                            <div class="box-social">
+                              <h3>Siguenos en nuestras redes sociales.</h3>
+                                      <a class="btn btn-block btn-social btn-twitter">
+                                        <span class="fa fa-twitter"></span> Sign in with Twitter
+                                      </a>
+                                      <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fa fa-facebook"></span> Sign in with Faceboot
+                                      </a>
+                                      <a class="btn btn-block btn-social btn-google">
+                                        <span class="fa fa-google"></span> Sign in with Google
+                                      </a>
                             </div>
-                </div>
-
-                <img src="../menuImg.jpg" class="horariosImg" id= "menu">
-                  
-                 
-
-                <div class="container" style="margin-top:100px" id="galeria">
-                    <div class="row">
+                          </iframe>  
                       </div>
-                      <div class="col-sm-16">
-                        <h2 class="titles">Galeria</h2>
-                      <div id="demo" class="carousel slide" data-ride="carousel">
+                  </div>
+<!---inicia galeria-->
+                      
+                  <div class="col-sm-16" id="galeria">
+
+                  <div id="demo" class="carousel slide" data-ride="carousel">
           
-                    <!-- Indicators -->
+<!-- Indicadores de imagen -->
+                    
                     <ul class="carousel-indicators">
                       <li data-target="#demo" data-slide-to="0" class="active"></li>
                       <li data-target="#demo" data-slide-to="1"></li>
                       <li data-target="#demo" data-slide-to="2"></li>
                     </ul>
                   
-                    <!-- The slideshow -->
+<!-- imagenes -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="../galeria1.jpg" class="rounded" width="1000" height="600" alt="">
@@ -70,7 +52,7 @@
                         </div>
                     </div>
                   
-                    <!-- Left and right controls -->
+<!-- Controles izquierda derecha -->
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </a>
@@ -81,8 +63,9 @@
                   </div>
                   </div>
                 </div>
-             
-        
+              </div>
+                  
+                  <div class="separator"></div>
         <% include ../partials/footer.ejs %>  
   </body>
 </html>
